@@ -1,11 +1,14 @@
 const express = require("express");
 
+const products_routes = require("./routes/products");
+
 const app = express();
 const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("Hello from entry page");
-});
+app.use(express.json());
+
+//Middleware
+app.use("/api/products", products_routes);
 
 const startServer = async () => {
   try {
