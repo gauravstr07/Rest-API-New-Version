@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
 
-uri = "mongodb://localhost:27017/thapa-new-restapi";
-
 mongoose.set("strictQuery", true);
 
-const connectDB = () => {
+const connectDB = (uri) => {
   return mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,

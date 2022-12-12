@@ -1,0 +1,19 @@
+[
+  {
+    "name": "iPhone 6s",
+    "price": 154,
+    "featured": true,
+    "company": "Apple"
+  },
+  {
+    "name": "Galaxy s7",
+    "price": 151,
+    "featured": true,
+    "company": "Samsung"
+  },
+  {
+    "name": "Serise 6",
+    "price": 150,
+    "company": "Apple"
+  }
+] 
